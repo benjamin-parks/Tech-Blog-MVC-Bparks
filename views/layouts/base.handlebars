@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change to Handlebars</title>
+</head>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/dashboard">Dashboard</a></li>
+    {{#if loggedIn}}
+        <li><a href="/logout">Logout</a></li>
+    {{else}}
+        <li><a href="/login">Login</a></li>
+    {{/if}}
+</ul>
+<body>
+{{{body}}}
+</body>
+<script src="/js/main.js"></script>
+</html>
